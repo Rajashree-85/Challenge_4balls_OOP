@@ -36,14 +36,14 @@ public class MySketch_4balls_OOP extends PApplet {
     }
 
     public void setup() {
-        for(int i=0;i<num_Balls;i++){
-            ball[i]=new Ball(0, ((float) HEIGHT /5)*(i+1),DIAMETER);
+        for(int iterator=0;iterator<num_Balls;iterator++){
+            ball[iterator]=new Ball(0, ((float) HEIGHT /5)*(iterator+1),DIAMETER);
         }
     }
 
     public void draw(){
-        for(int i=0;i<num_Balls;i++){
-            ball[i].display(i+1);
+        for(int iterator=0;iterator<num_Balls;iterator++){
+            ball[iterator].display(iterator+1);
         }
     }
 }
